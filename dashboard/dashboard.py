@@ -18,11 +18,12 @@ st.set_page_config(
 @st.cache_data
 def load_data():
 
-    base_dir = os.path.dirname(os.path.abspath(__file__))
+    import os
 
-    # Data harian
-    day = pd.read_csv(os.path.join(base_dir, "main_data.csv"), parse_dates=["dteday"])
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
+day = pd.read_csv(os.path.join(BASE_DIR, "main_data.csv"), parse_dates=["dteday"])
+hour = pd.read_csv(os.path.join(BASE_DIR, "hour_data.csv"), parse_dates=["dteday"])
     season_map  = {1: "Spring", 2: "Summer", 3: "Fall", 4: "Winter"}
     weather_map = {
         1: "Clear/Partly Cloudy",
