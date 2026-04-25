@@ -54,7 +54,7 @@ streamlit run dashboard/dashboard.py
 
 ### 3. Akses di Browser
 
-Dashboard akan terbuka otomatis di: **[http://localhost:8501](https://bike-sharing-dashboard-dicoding-dbs.streamlit.app/)**
+Dashboard akan terbuka otomatis di: **[https://bike-sharing-dashboard-dicoding-dbs.streamlit.app/]**
 
 ---
 
